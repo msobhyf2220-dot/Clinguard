@@ -759,24 +759,24 @@
           <div><strong>Coverage</strong>Multi-region, remote &amp; on-site monitoring</div>
         </div>
       </div>
-      <form class="cform reveal" onsubmit="event.preventDefault(); alert('Thank you — your request has been noted. (Demo form — not connected to a backend.)');">
-        <div class="fgroup"><label>Name</label><input type="text" required></div>
-        <div class="fgroup"><label>Organization</label><input type="text" required></div>
-        <div class="fgroup"><label>Job Title</label><input type="text"></div>
-        <div class="fgroup"><label>Email</label><input type="email" required></div>
-        <div class="fgroup"><label>Phone</label><input type="tel"></div>
-        <div class="fgroup"><label>Country</label><input type="text"></div>
-        <div class="fgroup"><label>Type of Organization</label>
-          <select><option>Sponsor</option><option>CRO</option><option>Research Site</option><option>Other</option></select>
+<form class="cform reveal" action="https://formspree.io/f/mgaabken" method="POST">
+  <div class="fgroup"><label>Name</label><input type="text" required></div>
+       <div class="fgroup"><label>Name</label><input type="text" name="name" required></div>
+<div class="fgroup"><label>Organization</label><input type="text" name="organization" required></div>
+<div class="fgroup"><label>Job Title</label><input type="text" name="job_title"></div>
+<div class="fgroup"><label>Email</label><input type="email" name="email" required></div>
+<div class="fgroup"><label>Phone</label><input type="tel" name="phone"></div>
+<div class="fgroup"><label>Country</label><input type="text" name="country"></div>
+          <select name="organization_type"><option>Sponsor</option><option>CRO</option><option>Research Site</option><option>Other</option></select>
         </div>
         <div class="fgroup"><label>Study Phase</label>
-          <select><option>Phase I</option><option>Phase II</option><option>Phase III</option><option>Phase IV</option><option>Not applicable</option></select>
+          <select name="study_phase"><option>Phase I</option><option>Phase II</option><option>Phase III</option><option>Phase IV</option><option>Not applicable</option></select>
         </div>
-        <div class="fgroup full"><label>Therapeutic Area</label><input type="text"></div>
+        <div class="fgroup full"><label>Therapeutic Area</label><input type="text" name="therapeutic_area"></div>
         <div class="fgroup full"><label>Required Service</label>
-          <select><option>Clinical Study Monitoring</option><option>GCP Compliance Monitoring</option><option>Data Integrity Review</option><option>Inspection Readiness</option><option>Other / Not sure yet</option></select>
+          <select name="required_service"><option>Clinical Study Monitoring</option><option>GCP Compliance Monitoring</option><option>Data Integrity Review</option><option>Inspection Readiness</option><option>Other / Not sure yet</option></select>
         </div>
-        <div class="fgroup full"><label>Message</label><textarea rows="4"></textarea></div>
+        <div class="fgroup full"><label>Message</label><textarea name="message" rows="4"></textarea></div>
         <div class="submit-row"><button class="btn btn-primary" type="submit" style="border:none;">Submit Request</button></div>
       </form>
     </div>
